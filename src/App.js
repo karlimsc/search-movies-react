@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import {Title} from './components/Title.js'
+import {SearchForm} from './components/SearchForm.js'
 import './App.css';
+import 'bulma/css/bulma.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render()
+  {
+    return (
+      <div className="App">
+      <Title>Proyecto Karli: Search Movies</Title>
+        <div className='SearchForm-wrapper'>
+          <SearchForm/>
+        </div>
+
+      </div>
+    )
+  }
 }
 
 export default App;

@@ -1,7 +1,14 @@
 .App {
+  padding-top: 36px;
   text-align: center;
+  background-color: #FA8072;
 }
 
+.SearchForm-wrapper{
+  display: flex;
+  justify-content: center;
+}
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +42,5 @@
   to {
     transform: rotate(360deg);
   }
-}
+
+}*/
