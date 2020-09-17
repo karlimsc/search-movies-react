@@ -1,12 +1,23 @@
 .App {
   padding-top: 36px;
   text-align: center;
-  background-color: #FA8072;
 }
 
 .SearchForm-wrapper{
   display: flex;
   justify-content: center;
+}
+
+.MoviesList{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 16px;
+}
+
+.MoviesList-item{
+margin-bottom: 24px;
+width: 48%;
 }
 /*
 .App-logo {
