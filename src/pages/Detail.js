@@ -17,7 +17,6 @@ static propTypes = {
 state = { movie: {}}
 
 _fetchMovie({id}) {
-console.log({id})
   fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
     .then(res =>  res.json())
     .then(movie => {
@@ -30,10 +29,8 @@ _goBack(){
 }
 
 componentDidMount(){
-  console.log('entro aqui')
-  console.log(this.props)
-  const {id} = this.props.match.params
-  this._fetchMovie({id})
+  const {movieId} = this.props.match.params
+  this._fetchMovie({id : movieId})
 }
 
   render(){
