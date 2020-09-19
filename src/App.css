@@ -10,7 +10,7 @@
 }
 
 .Search-title{
-  color: yellow;
+  color: grey;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125;
@@ -40,7 +40,7 @@ width: 48%;
   font-weight: 900;
   line-height: 1.125;
   margin-bottom: 24px;
-  background-color: yellow;
+  background-color: white;
   font-family: sans-serif;
 
 }
