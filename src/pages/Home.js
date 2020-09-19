@@ -20,7 +20,7 @@ export class Home extends Component {
   render(){
     return(
       <div>
-          <div className='Encabezado'>
+          <div className='Header'>
               <h1>PROYECTO KARLI</h1>
           </div>
           <Title>Search Movies</Title>

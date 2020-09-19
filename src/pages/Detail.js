@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import {ButtonBacktoHome} from '../components/ButtonBacktoHome.js'
 
 const API_KEY = '60477527'
 
@@ -24,10 +25,6 @@ _fetchMovie({id}) {
   })
 }
 
-_goBack(){
-  window.history.back()
-}
-
 componentDidMount(){
   const {movieId} = this.props.match.params
   this._fetchMovie({id : movieId})
@@ -39,16 +36,29 @@ componentDidMount(){
 
     return(
       <div>
-          <h1> {Title} </h1>
+        <div className="Header-title-detail">
+            {Title}
+        </div>
           <img
             src = {Poster}
             alt="Poster de la película"
           />
-          <h3>{Actors}</h3>
-          <h4>{Language}</h4>
-          <span>{Genre}</span>
-          <p>{Plot}</p>
-        <button className="button is-dark" onClick={this._goBack}>Go back</button>
+          <div className="Box-detail">
+              <article class="message is-dark">
+                  <div class="message-header">
+                    <p>Description</p>
+                    <button class="delete" aria-label="delete"></button>
+                  </div>
+                <div class="message-body">
+                    <h3>{Actors}</h3>
+                    <h4>{Language}</h4>
+                    <span>{Genre}</span>
+                    <p>{Plot}</p>
+                </div>
+              </article>
+
+          </div>
+          {ButtonBacktoHome}
       </div>
     )
   }
